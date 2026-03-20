@@ -1,0 +1,18 @@
+<header>
+    <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-2 cursor-pointer" (click)="goToHome()">
+        <div class="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center shadow-[0_0_20px_rgba(79,70,229,0.6)]">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+        </div>
+        <span class="inline-block font-bold text-xl tracking-tight bg-gradient-to-r from-white to-slate-400 ">RepoTalk AI</span>
+      </div>
+      <nav class="hidden md:flex gap-8 text-sm font-medium text-slate-400">
+        <a href="#" class="hover:text-white transition-colors">Features</a>
+        <a href="#" class="hover:text-white transition-colors">Documentation</a>
+        <a href="#" class="hover:text-white transition-colors">GitHub</a>
+      </nav>
+      <button  class="px-4 py-2 text-sm font-semibold bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded-full transition-all cursor-pointer" (click)="goToRepo()">
+        Launch App
+      </button>
+    </div>
+  </header>
