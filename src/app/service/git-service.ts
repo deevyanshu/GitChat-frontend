@@ -7,7 +7,7 @@ import { BehaviorSubject,Observable } from 'rxjs';
 })
 export class GitService {
 
-  private baseUrl=`https://githubchat-172146982221.asia-south2.run.app/`;
+  private baseUrl=`https://githubchat-172146982221.asia-south2.run.app/api/v1/`;
 
   repositorySub=new BehaviorSubject<string>('')
   messagesSub=new BehaviorSubject<{role: 'user' | 'assistant', text: string}[]>([{ role: 'assistant', text: "Hello! I've finished analyzing the repository. What would you like to know about the codebase?" }])
