@@ -45,6 +45,7 @@ export class Chat {
       this.isTyping.set(false);
     },error=>{
       this.messages.update(msgs=>[...msgs,{role:'assistant',text:"Sorry, something went wrong while processing your request."}])
+      alert('Error processing request: gemini api limit reached');
       this.isTyping.set(false);
     })
   }

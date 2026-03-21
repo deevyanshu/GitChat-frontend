@@ -23,7 +23,7 @@ export class Repo {
       console.log('Repository loaded successfully:', res);
       this.router.navigate(['/chat'])
     },error=>{
-      console.error('Error loading repository:', error);
+      alert('Error loading repository: gemini api limit reached');
       this.service.repositorySub.next('');
       this.isConnecting.set(false)
     })
