@@ -1,0 +1,10 @@
+# Allow all search engines to crawl the whole site
+User-agent: *
+Allow: /
+
+# Block specific folders (like your admin panel or private routes)
+Disallow: /admin/
+Disallow: /login/
+
+# Tell them where your sitemap is (Replace with your actual domain)
+Sitemap: https://magical-kringle-1f1391.netlify.app/sitemap.xml
